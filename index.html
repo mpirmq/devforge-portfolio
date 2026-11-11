@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="DEVFORGE by Mpirm — software development, Python automation and modern web applications for businesses in Germany and beyond.">
+  <title>DEVFORGE — Software that moves your business forward</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-glow"></div>
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="DEVFORGE home"><span class="brand-mark">D<span>F</span></span><span>DEV<span class="accent">FORGE</span></span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#services" data-i18n="nav_services">Services</a>
+        <a href="#work" data-i18n="nav_work">Portfolio</a>
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav_contact">Let's talk <span>↗</span></a>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">DE</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">INDEPENDENT SOFTWARE DEVELOPMENT · GERMANY</span></div>
+        <h1 data-i18n="hero_title">Your ideas.<br><span class="gradient-text">Engineered</span> into reality.</h1>
+        <p class="hero-lead" data-i18n="hero_lead">I build useful software, automate repetitive work and create modern web experiences for people and businesses.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact" data-i18n="hero_cta">Discuss your project <span>↗</span></a>
+          <a class="button button-quiet" href="#work" data-i18n="hero_secondary">Explore selected work <span>↓</span></a>
+        </div>
+        <div class="hero-meta"><span>Python</span><i></i><span>JavaScript</span><i></i><span>Web & Automation</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative code illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-top"><div class="dots"><b></b><b></b><b></b></div><span>solution.py</span><span class="code-lock">⌘</span></div>
+          <div class="code-lines">
+            <p><em>01</em> <span class="purple">class</span> <span class="cyan">YourIdea</span>:</p>
+            <p><em>02</em> &nbsp;&nbsp;<span class="purple">def</span> <span class="yellow">build</span>(self):</p>
+            <p><em>03</em> &nbsp;&nbsp;&nbsp;&nbsp;problem = <span class="green">"your workflow"</span></p>
+            <p><em>04</em> &nbsp;&nbsp;&nbsp;&nbsp;solution = automate(problem)</p>
+            <p><em>05</em> &nbsp;&nbsp;&nbsp;&nbsp;<span class="purple">return</span> solution</p>
+            <p class="code-spacer"><em>06</em></p>
+            <p><em>07</em> <span class="comment"># Less busywork. More progress.</span></p>
+          </div>
+          <div class="code-bottom"><span><b class="status-dot"></b> Ready to build</span><span>DEVFORGE / 001</span></div>
+        </div>
+        <div class="float-chip chip-one">⚡ <span>Automation</span></div>
+        <div class="float-chip chip-two">{"</>"} <span>Web apps</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-inner"><span data-i18n="trust_label">TECHNOLOGIES I WORK WITH</span><div class="tech-list"><b>PYTHON</b><b>JAVASCRIPT</b><b>HTML5</b><b>CSS3</b><b>C</b><b>C#</b></div></div>
+    </section>
+
+    <section class="section container" id="services">
+      <div class="section-heading"><div><div class="eyebrow" data-i18n="services_eyebrow">WHAT I CAN BUILD</div><h2 data-i18n="services_title">Practical code.<br><span class="muted">Measurable impact.</span></h2></div><p data-i18n="services_intro">From a focused script to a complete web application, I turn everyday problems into maintainable digital solutions.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">⌘</div><div class="card-number">01 / AUTOMATION</div><h3 data-i18n="service1_title">Python automation</h3><p data-i18n="service1_desc">Automate repetitive tasks, process files and data, connect tools and give your team time back.</p><div class="tags"><span>Python</span><span>APIs</span><span>Data</span></div></article>
+        <article class="service-card"><div class="service-icon">▤</div><div class="card-number">02 / WEB</div><h3 data-i18n="service2_title">Websites & applications</h3><p data-i18n="service2_desc">Responsive websites, landing pages and browser-based tools with a clear user experience.</p><div class="tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div></article>
+        <article class="service-card"><div class="service-icon">⌁</div><div class="card-number">03 / CUSTOM SOFTWARE</div><h3 data-i18n="service3_title">Custom software</h3><p data-i18n="service3_desc">Small utilities, desktop tools and tailored features designed around the way you work.</p><div class="tags"><span>C</span><span>C#</span><span>Python</span></div></article>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-heading"><div><div class="eyebrow" data-i18n="work_eyebrow">SELECTED WORK</div><h2 data-i18n="work_title">Built to solve<br><span class="muted">real problems.</span></h2></div><p data-i18n="work_intro">A growing collection of practical demonstrations. These initial concepts are clearly marked as demos and will be replaced or expanded with finished, verifiable projects.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-feature">
+            <div class="project-art art-automation"><div class="mini-window"><div class="mini-head"><i></i><i></i><i></i><span>workflow.py</span></div><div class="flow-row"><b>Input files</b><span>→</span><b>Python</b><span>→</span><b>Report</b></div><div class="progress"><span></span></div><small>PROCESS COMPLETED</small></div></div>
+            <div class="project-info"><div class="project-meta"><span>PYTHON · AUTOMATION</span><span class="demo-label" data-i18n="demo_label">DEMO CONCEPT</span></div><h3>Automation Toolkit</h3><p data-i18n="project1_desc">A modular starter toolkit for batch file handling, data cleanup and repeatable reporting tasks.</p><a href="https://github.com/" target="_blank" rel="noreferrer" class="text-link" data-i18n="github_soon">GitHub project coming soon ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-invoice"><div class="invoice-sheet"><div class="invoice-brand">INVOICE<span>FLOW</span></div><div class="invoice-line wide"></div><div class="invoice-line"></div><div class="invoice-total"><small>TOTAL</small><b>€ 480.00</b></div></div></div>
+            <div class="project-info"><div class="project-meta"><span>PYTHON · BUSINESS TOOL</span><span class="demo-label" data-i18n="demo_label">DEMO CONCEPT</span></div><h3>Smart Invoice Generator</h3><p data-i18n="project2_desc">A concept for generating consistent PDF invoices from structured customer and service data.</p><a href="#contact" class="text-link" data-i18n="project_details">Discuss a similar tool ↗</a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-web"><div class="browser-card"><div class="browser-top"><i></i><i></i><i></i></div><div class="browser-content"><div class="browser-title"></div><div class="browser-copy"></div><div class="browser-button"></div><div class="browser-blocks"><i></i><i></i><i></i></div></div></div></div>
+            <div class="project-info"><div class="project-meta"><span>HTML · CSS · JAVASCRIPT</span><span class="demo-label" data-i18n="demo_label">DEMO CONCEPT</span></div><h3>Business Website</h3><p data-i18n="project3_desc">A responsive website concept focused on clear messaging, accessible layout and mobile usability.</p><a href="#contact" class="text-link" data-i18n="project_details">Discuss a similar project ↗</a></div>
+          </article>
+        </div>
+        <p class="portfolio-note" data-i18n="portfolio_note">Transparency note: the concepts above are portfolio demonstrations, not claimed client commissions. Live repositories and working demos will be linked after publication and testing.</p>
+      </div>
+    </section>
+
+    <section class="section container about-section" id="about">
+      <div class="about-mark"><div class="big-mark">DF<span>.</span></div><div class="mark-caption">DESIGNED TO BUILD<br>WHAT'S NEXT</div></div>
+      <div class="about-copy"><div class="eyebrow" data-i18n="about_eyebrow">A LITTLE ABOUT ME</div><h2 data-i18n="about_title">A developer who<br>thinks in <span class="gradient-text">solutions.</span></h2><p data-i18n="about_p1">I'm Mpirm, an independent software developer based in Germany. I work across Python, JavaScript, HTML, CSS, C and C#, choosing the right tool for the problem rather than forcing every project into one stack.</p><p data-i18n="about_p2">I value clear communication, sensible scope and software that is understandable and useful after delivery. Available for remote freelance projects.</p><div class="language-pills"><span>Deutsch · C1</span><span>English · B2</span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="container contact-inner"><div><div class="eyebrow" data-i18n="contact_eyebrow">HAVE A PROJECT IN MIND?</div><h2 data-i18n="contact_title">Let's make it<br><span class="gradient-text">work better.</span></h2><p data-i18n="contact_desc">Tell me what is slowing you down or what you want to build. We can start with a short, no-pressure conversation.</p></div><div class="contact-box"><div class="contact-orb">↗</div><h3 data-i18n="contact_box_title">Start a conversation</h3><p data-i18n="contact_box_desc">Email and professional profile links will be added here before the public launch.</p><a class="button button-primary" href="mailto:YOUR_EMAIL@example.com?subject=DEVFORGE%20project%20enquiry" data-i18n="contact_button">Email Mpirm <span>↗</span></a><small data-i18n="replace_email">Replace the placeholder email before publishing.</small></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">D<span>F</span></span><span>DEV<span class="accent">FORGE</span></span></a><span>© <span id="year"></span> DEVFORGE · Mpirm</span><span data-i18n="footer_note">Independent freelance software development · Germany</span></div><div class="container legal-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutzerklärung</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
