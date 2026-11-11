@@ -25,3 +25,7 @@ No claim of client commissions, production readiness, legal compliance, or live 
 ## Game development demo
 
 **NEON DRIFT: Signal Runner** (`demos/neon-drift.html`) is an original playable HTML Canvas arcade game. Keyboard and mobile input, procedural hazards, collectible signals, increasing difficulty, pause/restart, and local best score. No server or external assets required.
+
+
+## Visual refresh
+Midnight Teal palette, seven illustrative sample previews, bilingual example captions. Example metrics are illustrative, not actual measurements or customer data. Demo HTML pages are at repository root to match the published GitHub Pages paths.
