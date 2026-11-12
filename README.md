@@ -1,31 +1,36 @@
-# DEVFORGE — seven interactive portfolio projects
+# DEVFORGE - Mahomed Pirmahomedov
 
-A responsive EN/DE portfolio and seven browser demonstrations:
+Personal software development portfolio in English and German. DEVFORGE is a personal brand, not a registered company. These projects are personal demonstrations, not client references.
 
-1. **CSV Data Cleaner** — CSV import, cleanup, deduplication, download. Python standard-library CLI reference: `clean.py`.
-2. **Invoice Studio** — itemized calculations, VAT and print-to-PDF (JavaScript). Demo only; not legally validated invoicing software.
-3. **TaskFlow Board** — responsive HTML/CSS/JavaScript task management with local storage.
-4. **Energy Cost Planner** — compare electricity tariffs and efficiency scenarios. C CLI reference: `main.c`.
-5. **Privacy Request Tracker** — local request log and CSV export. C# .NET 8 CLI reference: `Program.cs` and `PrivacyTracker.csproj`. Not a GDPR compliance system.
+## Eight browser demos
 
-## Run
-Open `index.html` or publish the repository root using GitHub Pages. Browser demos are implemented in JavaScript, HTML and CSS; native Python/C/C# programs are separate reference implementations, not running on GitHub Pages.
+1. **SupportDesk** (`supportdesk-demo.html`): create and update tickets, record notes and status history, filter the queue, export CSV and run real SQLite queries against a read-only snapshot. Examples include SELECT, GROUP BY and JOIN. SQL runs in a Web Worker, with a 3-second timeout and a 200-row output cap. Ticket data stays in this browser's local storage; SQL snapshots are temporary. Browser network diagnostics are explicitly simulated.
+2. **CSV Data Cleaner** (`data-cleaner.html`): CSV import, whitespace cleanup, deduplication and export. Python CLI reference: `clean.py`.
+3. **Invoice Studio** (`invoice-studio.html`): item calculations, VAT and browser print-to-PDF. Personal demo, not legally validated invoicing software.
+4. **TaskFlow Board** (`task-board.html`): task statuses, priorities and local persistence.
+5. **Energy Cost Planner** (`energy-planner.html`): tariff and energy-cost scenarios. C CLI reference: `main.c`.
+6. **Privacy Request Tracker** (`privacy-requests.html`): request log and CSV export. C# reference: `Program.cs` and `PrivacyTracker.csproj`. Not a GDPR compliance system.
+7. **Brand DNA Studio** (`brand-dna-studio.html`): generative SVG designs and SVG/PNG export. Concepts are not trademark-cleared logos.
+8. **NEON DRIFT** (`neon-drift.html`): Canvas arcade game with keyboard/touch input and local best scores.
 
-Python: `python clean.py input.csv output.csv`
-C: `cc -std=c11 -Wall -Wextra main.c -o energy && ./energy`
-C#: `dotnet run --project PrivacyTracker.csproj` (requires .NET 8 SDK)
+## Local SupportDesk application
 
-## Important
-No claim of client commissions, production readiness, legal compliance, or live server integration. Privacy demo data stays in localStorage; do not enter personal data. Check Impressum/Datenschutzerklärung before commercial use.
+`DEVFORGE_SupportDesk.zip` contains the Python standard-library application, SQLite database implementation, UI, README and tests. Requires Python 3.10+. Extract the ZIP, run `python app.py` or `start.bat` and open `http://127.0.0.1:8765`.
 
-## 6. Brand DNA Studio — Creative coding
+The local application provides restricted DNS, TCP-443 and HTTPS diagnostics. The public browser demo instead simulates these checks. Browser SQL Analytics is a separate web feature and is not bundled in the local ZIP.
 
-`brand-dna-studio.html` is an offline-first generative brand-mark explorer built with vanilla JavaScript and SVG. Change visual direction, brand name, palette, complexity and random seed. Export SVG or 1000px PNG. Generated marks are concepts, not trademark-cleared logos.
+## Run the portfolio
 
-## Game development demo
+Publish the repository root with GitHub Pages or serve it with a local HTTP server. SQLite WebAssembly and Web Workers require HTTP(S), rather than opening the demo as a `file://` URL.
 
-**NEON DRIFT: Signal Runner** (`neon-drift.html`) is an original playable HTML Canvas arcade game. Keyboard and mobile input, procedural hazards, collectible signals, increasing difficulty, pause/restart, and local best score. No server or external assets required.
+Browser SQL uses vendored sql.js 1.13.0 (`sql-wasm.js`, `sql-wasm.wasm`); see `sqljs-LICENSE.txt` for licensing. No runtime CDN is required for SQL.
 
+Native reference programs run separately from GitHub Pages:
 
-## Visual refresh
-Midnight Teal palette, seven illustrative sample previews, bilingual example captions. Example metrics are illustrative, not actual measurements or customer data. Demo HTML pages are at repository root to match the published GitHub Pages paths.
+- Python: `python clean.py input.csv output.csv`
+- C: `cc -std=c11 -Wall -Wextra main.c -o energy` then `./energy`
+- C#: `dotnet run --project PrivacyTracker.csproj` (.NET 8 SDK)
+
+## Scope and data
+
+Use fictional demo data only. No employer data or private source code is included. These projects make no claim of production multi-user readiness, legal compliance or commercial deployment. Illustrative previews are examples, not measured client outcomes.
